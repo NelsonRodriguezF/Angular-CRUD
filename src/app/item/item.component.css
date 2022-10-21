@@ -1,0 +1,12 @@
+.image-card {
+  object-fit: cover !important;
+}
+
+.card {
+  transition: 1500ms;
+}
+
+.card:hover {
+  box-shadow: 1px 2px 3px 3px #adadad;
+  -webkit-transform: scale(1.15);
+}

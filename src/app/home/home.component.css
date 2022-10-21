@@ -1,0 +1,24 @@
+.imagen{
+  width: 80px;
+  height: 80px;
+  object-fit: cover !important;
+}
+
+.items{
+  line-height: 80px !important;
+}
+
+.category{
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.image-card{
+  width: 100%;
+  height: 250px;
+  object-fit: cover !important;
+}
+
+.nosotros{
+  text-align: justify;
+}

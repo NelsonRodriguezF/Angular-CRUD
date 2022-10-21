@@ -1,0 +1,43 @@
+<!--Componente Header-->
+<app-header></app-header>
+
+<div class="container p-0">
+  <h2 class="text-center mt-5">Nuestro catálogo de cócteles</h2>
+  <p class="pt-3 m-0">Muchas personas cuando visitan México esperan probar las bebidas más típicas y famosas. Las más conocidas y solicitadas
+  son las coronas y el tequila. Sin embargo, hay muchas otras opciones que puedes encontrar aquí.</p>
+</div>
+
+<!-- Card - Productos -->
+<div class="d-flex flex-md-wrap gap-5 justify-content-center p-5">
+  <div *ngFor="let item of db.cocteles" class="card mb-3" style="width: 18rem;">
+    <img [routerLink]="['/cocteles', item.id]" src="{{item.image}}" class="card-img-top image-card cursor-pointer" alt="{{item.name}}">
+    <div class="card-body pb-0 bg-light">
+      <div class="d-flex justify-content-between align-items-center">
+        <h5 class="card-title m-0 cursor-pointer name">{{item.name}}</h5>
+        <p class="text-danger font-monospace m-0">${{item.price | number}}</p>
+      </div>
+      <hr>
+      <div class="d-flex align-items-center pb-2">
+        <h6 class="card-text m-0">Categoría:</h6>
+        <p class="px-1 m-0">{{item.category}}</p>
+      </div>
+      <h6 class="card-text">Ingredientes:
+      </h6>
+      <ul>
+        <li>{{item.ingredients[0]}}</li>
+        <li>{{item.ingredients[1]}}</li>
+        <li *ngIf="item.ingredients[2]">{{item.ingredients[2]}}</li>
+        <li *ngIf="item.ingredients[3]">{{item.ingredients[3]}}</li>
+        <li *ngIf="item.ingredients[4]">{{item.ingredients[4]}}</li>
+        <li *ngIf="item.ingredients[5]">{{item.ingredients[5]}}</li>
+        <li *ngIf="item.ingredients[6]">{{item.ingredients[6]}}</li>
+        <li *ngIf="item.ingredients[7]">{{item.ingredients[7]}}</li>
+        <li *ngIf="item.ingredients[8]">{{item.ingredients[8]}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Fin Card - Productos -->
+
+<!--Componente Footer-->
+<app-footer></app-footer>

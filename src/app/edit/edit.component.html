@@ -1,0 +1,69 @@
+<!--Componente Header-->
+<app-header></app-header>
+
+<div class="row d-flex flex-column align-items-center p-5">
+  <h4 class="col-5 text-center text-capitalize">Editar {{coctel.name}}</h4>
+  <p class="col-5 text-start pt-4">Por favor ingresa los siguiente campos para editar el coctel</p>
+
+  <!--Formulario reactivo en angular-->
+  <form class="col-5" [formGroup]="form" (ngSubmit)="guardar()">
+
+    <div class="mb-3">
+      <label for="name" class="form-label">Nombre del Cocktail:</label>
+      <input type="text" class="form-control" name="name" placeholder="Nombre" formControlName="name" [value]="coctel.name" required>
+      <!--Este div se muestra cuando el campo esta vacio-->
+      <div *ngIf="form.get('name')?.touched && form.get('name')?.errors?.['required']" class="alert alert-danger p-2">
+        This field is required.
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="price" class="form-label">Precio:</label>
+      <input type="number" class="form-control" name="price" placeholder="Precio" formControlName="price" [value]="coctel.price" required>
+      <!--Este div se muestra cuando el campo esta vacio-->
+      <div *ngIf="form.get('price')?.touched && form.get('price')?.errors?.['required']" class="alert alert-danger p-2">
+        This field is required.
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="category" class="form-label">Categoría:</label>
+      <select class="form-control" name="category" formControlName="category">
+        <option value="Clasico">Clasico</option>
+        <option value="De la casa">De la casa</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="ingredients" class="form-label">Ingredientes:</label>
+      <textarea type="text" class="form-control" name="ingredients" placeholder="Ingredientes"
+        formControlName="ingredients" [value]="coctel.ingredients" required>
+      </textarea>
+      <!--Este div se muestra cuando el campo esta vacio-->
+      <div *ngIf="form.get('ingredients')?.touched && form.get('ingredients')?.errors?.['required']"
+        class="alert alert-danger p-2">
+        This field is required.
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="image" class="form-label">Imagen:</label>
+      <input type="file" src="../assets/images-coctails/" class="form-control" name="image" 
+             formControlName="image"
+             [value]="coctel.image"
+             required>
+    </div>
+
+    <!--Boton - Es desabilitado hasta que llenen los campos requeridos-->
+    <div class="d-flex gap-3 justify-content-between">
+      <button type="submit" class="btn btn-danger btn-lg w-50" [routerLink]="['/home']">Cancelar</button>
+      <button type="submit" class="btn btn-primary btn-lg w-50">Enviar</button>
+    </div>
+    <!--Fin boton-->
+
+  </form>
+  <!--Fin Formilario-->
+</div>
+
+<!--Componente Footer-->
+<app-footer></app-footer>

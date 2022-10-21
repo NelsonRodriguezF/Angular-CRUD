@@ -1,0 +1,43 @@
+<!--El router link me permite navegar entre rutas sin recargar el sitio web-->
+
+<!-- Componente header -->
+<app-header></app-header>
+
+<!-- Card - Productos -->
+<div class="d-flex justify-content-center flex-lg-wrap p-5">
+  <div class="card mb-3" style="width: 20rem;">
+    <img src="{{coctel.image}}" class="card-img-top image-card" alt="{{coctel.name}}">
+    <div class="card-body pb-0">
+      <div class="d-flex justify-content-between align-items-center">
+        <h5 class="card-title m-0">{{coctel.name}}</h5>
+        <p class="text-danger font-monospace m-0">${{coctel.price | number}}</p>
+      </div>
+      <hr>
+      <div class="d-flex align-items-center pb-2">
+        <h6 class="card-text m-0">Categoría:</h6>
+        <p class="px-1 m-0">{{coctel.category}}</p>
+      </div>
+      <h6 class="card-text">Ingredientes:
+      </h6>
+      <ul>
+        <li>{{coctel.ingredients[0]}}</li>
+        <li>{{coctel.ingredients[1]}}</li>
+        <li *ngIf="coctel.ingredients[2]">{{coctel.ingredients[2]}}</li>
+        <li *ngIf="coctel.ingredients[3]">{{coctel.ingredients[3]}}</li>
+        <li *ngIf="coctel.ingredients[4]">{{coctel.ingredients[4]}}</li>
+        <li *ngIf="coctel.ingredients[5]">{{coctel.ingredients[5]}}</li>
+        <li *ngIf="coctel.ingredients[6]">{{coctel.ingredients[6]}}</li>
+        <li *ngIf="coctel.ingredients[7]">{{coctel.ingredients[7]}}</li>
+        <li *ngIf="coctel.ingredients[8]">{{coctel.ingredients[8]}}</li>
+      </ul>
+    </div>
+    <div>
+      <button type="button" class="btn btn-primary w-50" [routerLink]="['/cocteles']">Volver al catálogo</button>
+      <button type="button" class="btn btn-danger w-50" [routerLink]="['/cocteles']" (click)="eliminar()">Eliminar</button>
+    </div>
+  </div>
+</div>
+<!-- Fin Card - Productos -->
+
+<!-- Componente footer -->
+<app-footer></app-footer>

@@ -1,0 +1,39 @@
+<!--El router link me permite navegar entre rutas sin recargar el sitio web-->
+
+<nav class="navbar navbar-expand-lg bg-primary">
+  <div class="container-fluid row px-5">
+    <a class="navbar-brand col-7 px-5 py-2 text-white text-uppercase d-flex align-items-center" 
+       routerLinkActive="active" 
+       routerLink="/home">
+      Oh Que Chido
+      <span class="material-symbols-outlined px-2">local_bar</span>
+    </a>
+    <div class="collapse navbar-collapse col-5" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
+        <li class="nav-item">
+          <a class="nav-link active text-white text-uppercase" aria-current="page" 
+             routerLinkActive="active" 
+             routerLink="/cocteles">
+            Cócteles
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white text-uppercase" routerLinkActive="active" routerLink="/add">
+            Agregar
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white text-uppercase" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Redes sociales
+          </a>
+          <ul class="dropdown-menu text-white">
+            <li><a class="dropdown-item" href="https://www.linkedin.com/in/nelson-rodriguez-dev/" target="_blank">LinkedIn</a></li>
+            <hr class="dropdown-divider">
+            <li><a class="dropdown-item" href="https://github.com/NelsonRodriguezF" target="_blank">GitHub</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

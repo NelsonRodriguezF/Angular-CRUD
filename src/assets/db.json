@@ -1,0 +1,163 @@
+{
+  "cocteles": [
+    {
+      "id": 1,
+      "name": "Chida Margarita",
+      "price": 16000,
+      "category": "De la casa",
+      "image": "../assets/images-coctails/margarita.jpg",
+      "ingredients": [
+        "Tequila",
+        "Zumo limon",
+        "Syrup Jengibre",
+        "Syrup Naranja"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Color Frida",
+      "price": 16000,
+      "category": "De la casa",
+      "image": "../assets/images-coctails/frida.jpg",
+      "ingredients": [
+        "Gin",
+        "Vermouth Rosso",
+        "Zumo limon",
+        "Syrup Cardamomo",
+        "Syrup Frutos rojos",
+        "Clara de huevo"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Señor Aguilar",
+      "price": 15000,
+      "category": "De la casa",
+      "image": "../assets/images-coctails/señor-aguilar.jpg",
+      "ingredients": [
+        "Whiskey",
+        "Zumo lemon",
+        "Syrup Jengibre",
+        "Syrup especies",
+        "Soda"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Catrina",
+      "price": 16000,
+      "category": "De la casa",
+      "image": "../assets/images-coctails/catrina.jpg",
+      "ingredients": [
+        "Tequila",
+        "Campari",
+        "Zumo lemon",
+        "Syrup Jengibre",
+        "Syrup Orange"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Divo de Juarez",
+      "price": 15000,
+      "category": "De la casa",
+      "image": "../assets/images-coctails/divo.jpg",
+      "ingredients": [
+        "Gin",
+        "Zumo limon",
+        "Syrup Miel",
+        "Syrup Cardamomo",
+        "Albahaca"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Fiebre Mezcal",
+      "price": 16000,
+      "category": "De la casa",
+      "image": "../assets/images-coctails/mezcal.jpg",
+      "ingredients": [
+        "Tequila",
+        "Zumo limon",
+        "Syrup Guayaba",
+        "Syrup Miel"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Capillita",
+      "price": 15000,
+      "category": "De la casa",
+      "image": "../assets/images-coctails/capillita.jpg",
+      "ingredients": [
+        "Brandy",
+        "Zumo limon",
+        "Syrup Orange",
+        "Soda"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Jamaica Gin Tonic",
+      "price": 18000,
+      "category": "De la casa",
+      "image": "../assets/images-coctails/GinTonic.jpg",
+      "ingredients": [
+        "Gin",
+        "Zumo limon",
+        "Syrup Jamaica",
+        "Tonica"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Mojito",
+      "price": 14000,
+      "category": "Clasicos",
+      "image": "../assets/images-coctails/mojito.webp",
+      "ingredients": [
+        "Ron",
+        "Zumo limon",
+        "Syrup Simple",
+        "Hierbabuena",
+        "Soda"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Dry Martini",
+      "price": 18000,
+      "category": "Clasicos",
+      "image": "../assets/images-coctails/martini.jpg",
+      "ingredients": [
+        "Gin",
+        "Vermouth Dry"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Negroni",
+      "price": 18000,
+      "category": "Clasicos",
+      "image": "../assets/images-coctails/negroni.jpg",
+      "ingredients": [
+        "Campari",
+        "Gin",
+        "Vermouth Rosso"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Tom Collins",
+      "price": 14000,
+      "category": "Clasicos",
+      "image": "../assets/images-coctails/collins.jpg",
+      "ingredients": [
+        "Gin",
+        "Zumo limon",
+        "Syrup Simple",
+        "Soda"
+      ]
+    }
+  ]
+}
